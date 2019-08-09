@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>测试</title>
+  <style>
+    .login {
+      position: fixed;
+      width: 500px;
+      height: 400px;
+      background: #ddd;
+      top: -10%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+    .tt-form-item {
+      display: flex;
+      position: relative;
+      padding-left: 1em;
+      border-bottom: 1px solid #eee;
+    }
+    .tt-form-item:last-child{
+      border-bottom: none;
+    }
+    .tt-form-item > .tt-form-label {
+      display: block;
+      width: 3em;
+      font-size: .8em;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: right;
+      background-color: #eee;
+    }
+    .tt-form-item > .tt-form-body{
+        flex: 1;
+    }
+    .tt-form-item > .tt-form-body > .tt-input{
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: .8rem;
+        border:none;
+        text-indent: 1em;
+    }
+    .tt-form-item > .tt-radio{
+      flex: 1;
+      font-size: .8rem;
+      line-height: 2rem;
+    }
+    /* 未选中状态的图标 */
+    .tt-form-item > .tt-radio > .tt-radio-icon{
+        margin-right: .5rem;
+        color: #09BB07;
+        visibility: hidden;
+    }
+    /* 选中状态的图标 */
+    .tt-form-item > .tt-radio.checked > .tt-radio-icon{
+        visibility: visible;
+    }
+    /* 隐藏的radio类型的input */
+    .tt-form-item > .tt-radio > .tt-radio-input{
+        position: absolute;
+        left: -999rem;
+    }
+    /* 自定义多选 */
+    .tt-form-item > .tt-check{
+        flex: 1;
+        font-size: .8rem;
+        line-height: 2rem;
+    }
+    /* 未选中时的图标 */
+    .tt-form-item > .tt-check > .tt-check-icon{
+        margin-right: .5rem;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        color: rgba(0,0,0,0);
+        font-size: .6rem;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    /* 选中时的图标 */
+    .tt-form-item > .tt-check.checked > .tt-check-icon{
+        background: #09BB07;
+        color: #fff;
+        border-color: rgba(0,0,0,0)
+    }
+    /* 隐藏的check类型的input */
+    .tt-form-item > .tt-check > .tt-check-input{
+        position: absolute;
+        left: -999rem;
+    }
+                         
+  </style>
+</head>
+<body>
+  <div class="login">
+      <h1 class="tt-panel-title">基本输入框:</h1>
+      <div class="tt-panel-body no-padding">
+          <div class="tt-form-item">
+              <label class="tt-form-label">用户名</label>
+              <div class="tt-form-body">
+                  <input class="tt-input" type="text" placeholder="请输入姓名" />
+              </div>
+          </div>
+          <div class="tt-form-item">
+              <label class="tt-form-label">密码</label>
+              <div class="tt-form-body">
+                  <input class="tt-input" type="password" placeholder="请输入密码" />
+              </div>
+          </div>
+          <div class="tt-form-item">
+              <label class="tt-form-label">日期</label>
+              <div class="tt-form-body">
+                  <input class="tt-input" type="date" placeholder="请选择日期" />
+              </div>
+          </div>
+          <div class="tt-form-item">
+              <div class="tt-radio">
+                  <i class="fa fa-check tt-radio-icon"></i>
+                  <span class="tt-radio-desc">单选选项1</span>
+                  <input class="tt-radio-input" type="radio">
+              </div>
+          </div>
+          <div class="tt-form-item">
+              <div class="tt-radio checked">
+                  <i class="fa fa-check tt-radio-icon"></i>
+                  <span class="tt-radio-desc">单选选项1</span>
+                  <input class="tt-radio-input" type="radio">
+              </div>
+          </div>
+          <div class="tt-form-item">
+              <div class="tt-check checked">
+                  <i class="fa fa-check tt-check-icon"></i>
+                  <span class="tt-check-desc">多选选项3</span>
+                  <input class="tt-check-input" type="checkbox">
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
