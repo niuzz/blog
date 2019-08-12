@@ -25,6 +25,13 @@ const frontendbar = [
     ]
   },
   {
+    title: "实战",
+    collapsable: false,
+    children: [
+      "实战/VueUI库"
+    ]
+  },
+  {
     title: "周边技术",
     collapsable: false,
     children: [
