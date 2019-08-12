@@ -18,7 +18,7 @@ const frontendbar = [
         children: [
           "进阶/w1-最简单的webpack4项目",
           "进阶/w2-动手搭建个vue项目",
-          "进阶/w3-wabpack4详解",
+          "进阶/w3-webpack4详解",
           "进阶/w4-自己实现个webpack",
         ]
       }
