@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css--sass 基础 | Jason&#39;s Blog</title>
+    <meta name="description" content="Jason个人站，技术，营销和白日梦 ga">
+    <link rel="icon" href="/favicon.icon">
+    
+    <link rel="preload" href="/assets/css/0.styles.79ba9eaa.css" as="style"><link rel="preload" href="/assets/js/app.20b7a3cd.js" as="script"><link rel="preload" href="/assets/js/2.94e36c74.js" as="script"><link rel="preload" href="/assets/js/18.03c2d240.js" as="script"><link rel="prefetch" href="/assets/js/10.1d27e27a.js"><link rel="prefetch" href="/assets/js/11.e4f2875f.js"><link rel="prefetch" href="/assets/js/12.b35cc923.js"><link rel="prefetch" href="/assets/js/13.f07507f2.js"><link rel="prefetch" href="/assets/js/14.458caf1e.js"><link rel="prefetch" href="/assets/js/15.a99294e4.js"><link rel="prefetch" href="/assets/js/16.7cb0eb3c.js"><link rel="prefetch" href="/assets/js/17.c3e00627.js"><link rel="prefetch" href="/assets/js/19.9c92a692.js"><link rel="prefetch" href="/assets/js/20.ad8acc7f.js"><link rel="prefetch" href="/assets/js/21.0446ff0b.js"><link rel="prefetch" href="/assets/js/22.a4ba6dc2.js"><link rel="prefetch" href="/assets/js/23.10931822.js"><link rel="prefetch" href="/assets/js/24.29db39b4.js"><link rel="prefetch" href="/assets/js/25.4265a2b1.js"><link rel="prefetch" href="/assets/js/26.ad124b4a.js"><link rel="prefetch" href="/assets/js/27.29dfdf21.js"><link rel="prefetch" href="/assets/js/28.98b3e125.js"><link rel="prefetch" href="/assets/js/29.52a42b6a.js"><link rel="prefetch" href="/assets/js/3.ff294584.js"><link rel="prefetch" href="/assets/js/30.9700a75f.js"><link rel="prefetch" href="/assets/js/31.67960775.js"><link rel="prefetch" href="/assets/js/4.2c04eda2.js"><link rel="prefetch" href="/assets/js/5.57c93f9b.js"><link rel="prefetch" href="/assets/js/6.7b8561e6.js"><link rel="prefetch" href="/assets/js/7.74e24fbc.js"><link rel="prefetch" href="/assets/js/8.8e068b73.js"><link rel="prefetch" href="/assets/js/9.aa96a151.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.79ba9eaa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jason's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/前端开发/" class="nav-link">前端</a></div><div class="nav-item"><a href="/算法/" class="nav-link">算法</a></div><div class="nav-item"><a href="/增长黑客/" class="nav-link">增长黑客</a></div><div class="nav-item"><a href="/故事/" class="nav-link">故事</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/前端开发/" class="nav-link">前端</a></div><div class="nav-item"><a href="/算法/" class="nav-link">算法</a></div><div class="nav-item"><a href="/增长黑客/" class="nav-link">增长黑客</a></div><div class="nav-item"><a href="/故事/" class="nav-link">故事</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/前端开发/基础/js-Javascript高级程序设计笔记.html" class="sidebar-link">js--JavaScript高级程序设计</a></li><li><a href="/前端开发/基础/js-常见源码实现.html" class="sidebar-link">js--常见源码实现</a></li><li><a href="/前端开发/基础/js-继承与原型链.html" class="sidebar-link">js-作用域，原型链，闭包</a></li><li><a href="/前端开发/基础/css-css基础.html" class="sidebar-link">css--css 基础</a></li><li><a href="/前端开发/基础/css-sass.html" class="active sidebar-link">css--sass 基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#变量" class="sidebar-link">变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#普通变量" class="sidebar-link">普通变量</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#变量默认值" class="sidebar-link">变量默认值</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#变量的-使用形式" class="sidebar-link">变量的#{}使用形式</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#多值变量" class="sidebar-link">多值变量</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#全局变量" class="sidebar-link">全局变量</a></li></ul></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#嵌套" class="sidebar-link">嵌套</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#选择器嵌套和" class="sidebar-link">选择器嵌套和&amp;</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#属性嵌套" class="sidebar-link">属性嵌套</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#at-root" class="sidebar-link">@at-root</a></li></ul></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#混合-mixin" class="sidebar-link">混合(mixin)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#无参数mixin" class="sidebar-link">无参数mixin</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#有参数mixin" class="sidebar-link">有参数mixin</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#多个参数mixin" class="sidebar-link">多个参数mixin</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#多组值参数mixin" class="sidebar-link">多组值参数mixin</a></li></ul></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#content" class="sidebar-link">@content</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#继承" class="sidebar-link">继承</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#占位选择器" class="sidebar-link">占位选择器%</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#函数" class="sidebar-link">函数</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#运算" class="sidebar-link">运算</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#条件判断及循环" class="sidebar-link">条件判断及循环</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#if判断" class="sidebar-link">@if判断</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#三目判断" class="sidebar-link">三目判断</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#for循环" class="sidebar-link">for循环</a></li><li class="sidebar-sub-header"><a href="/前端开发/基础/css-sass.html#each循环" class="sidebar-link">@each循环</a></li></ul></li></ul></li><li><a href="/前端开发/基础/node-node基础.html" class="sidebar-link">node--node 基础</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>react基础</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/前端开发/进阶/w1-最简单的webpack4项目.html" class="sidebar-link">w1-最简单的webpack打包</a></li><li><a href="/前端开发/进阶/w2-动手搭建个vue项目.html" class="sidebar-link">w2-动手搭建个vue项目</a></li><li><a href="/前端开发/进阶/w3-webpack4详解.html" class="sidebar-link">w3-webpack4详解</a></li><li><a href="/前端开发/进阶/w4-自己实现个webpack.html" class="sidebar-link">w4-自己实现个webpack</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue源码</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/前端开发/实战/VueUI库.html" class="sidebar-link">基于Vue的UI库</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>周边技术</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/前端开发/周边/vuepress搭建blog.html" class="sidebar-link">vuepress搭建Blog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="变量"><a href="#变量" aria-hidden="true" class="header-anchor">#</a> 变量</h2> <p>sass的变量必须是$开头，后面紧跟变量名，而变量值和变量名之间就需要使用冒号(:)分隔开（就像CSS属性设置一样），如果值后面加上!default则表示默认值。</p> <h3 id="普通变量"><a href="#普通变量" aria-hidden="true" class="header-anchor">#</a> 普通变量</h3> <p>定义之后可以在全局使用</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$fontSize</span></span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token selector">body</span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token variable">$fontSize</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">body</span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="变量默认值"><a href="#变量默认值" aria-hidden="true" class="header-anchor">#</a> 变量默认值</h3> <p>值后加上!default</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$baseLineHeight</span></span><span class="token punctuation">:</span> 1.5 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token variable">$baseLineHeight</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span>1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>sass的默认变量一般是用来设置默认值，然后根据需求来覆盖的，覆盖的方式也很简单，只需要在默认变量之前重新声明下变量即可</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$baseLineHeight</span></span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$baseLineHeight</span></span><span class="token punctuation">:</span> 1.5 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token selector">body</span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token variable">$baseLineHeight</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">body</span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span>2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="变量的-使用形式"><a href="#变量的-使用形式" aria-hidden="true" class="header-anchor">#</a> 变量的#{}使用形式</h3> <p>一般我们定义的变量都为属性值，可直接使用，但是如果变量作为属性或在某些特殊情况下等则必须要以 #{$variables} 形式使用。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$borderDirection</span></span><span class="token punctuation">:</span> top <span class="token statement keyword">!default</span><span class="token punctuation">;</span> 
+<span class="token property"><span class="token variable">$baseFontSize</span></span><span class="token punctuation">:</span> 12px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$baseLineHeight</span></span><span class="token punctuation">:</span> 1.5 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token comment">//应用于class和属性</span>
+<span class="token selector">.border-<span class="token variable">#{$borderDirection}</span> </span><span class="token punctuation">{</span>
+  <span class="token property">border-<span class="token variable">#{$borderDirection}</span></span><span class="token punctuation">:</span> 1px solid #ccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//应用于复杂的属性值</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> <span class="token variable">#{$baseFontSize}</span>/<span class="token variable">#{$baseLineHeight}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.border-top </span><span class="token punctuation">{</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span>1px solid #ccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> 12px/1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="多值变量"><a href="#多值变量" aria-hidden="true" class="header-anchor">#</a> 多值变量</h3> <p>多值变量分为list类型和map类型，简单来说list类型有点像js中的数组，而map类型有点像js中的对象。</p> <h4 id="list"><a href="#list" aria-hidden="true" class="header-anchor">#</a> list</h4> <p>list数据可通过空格，逗号或小括号分隔多个值，可用nth($var,$index)取值。关于list数据操作还有很多其他函数如length($list)，join($list1,$list2,[$separator])，append($list,$value,[$separator])等，具体可参考sass Functions（搜索List Functions即可）</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//一维数据</span>
+<span class="token property"><span class="token variable">$px</span></span><span class="token punctuation">:</span> 5px 10px 20px 30px<span class="token punctuation">;</span>
+<span class="token comment">//二维数据，相当于js中的二维数组</span>
+<span class="token property"><span class="token variable">$px</span></span><span class="token punctuation">:</span> 5px 10px<span class="token punctuation">,</span> 20px 30px<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$px</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>5px 10px<span class="token punctuation">)</span> <span class="token punctuation">(</span>20px 30px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 使用</span>
+<span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$linkColor</span></span><span class="token punctuation">:</span> #08c #333 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token comment">//第一个值为默认值，第二个鼠标滑过值</span>
+<span class="token selector">a </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span><span class="token function">nth</span><span class="token punctuation">(</span><span class="token variable">$linkColor</span><span class="token punctuation">,</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover</span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span><span class="token function">nth</span><span class="token punctuation">(</span><span class="token variable">$linkColor</span><span class="token punctuation">,</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">a</span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#08c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">a:hover</span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h4 id="map"><a href="#map" aria-hidden="true" class="header-anchor">#</a> map</h4> <p>map数据以key和value成对出现，其中value又可以是list。格式为：$map: (key1: value1, key2: value2, key3: value3);。可通过map-get($map,$key)取值。关于map数据还有很多其他函数如map-merge($map1,$map2)，map-keys($map)，map-values($map)等，具体可参考sass Functions（搜索Map Functions即可）</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$headings</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token property">h1</span><span class="token punctuation">:</span> 2em<span class="token punctuation">,</span> <span class="token property">h2</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">,</span> <span class="token property">h3</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$header</span>, <span class="token variable">$size</span> in <span class="token variable">$headings</span> </span><span class="token punctuation">{</span>
+  <span class="token selector"><span class="token variable">#{$header}</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h2 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h3 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="全局变量"><a href="#全局变量" aria-hidden="true" class="header-anchor">#</a> 全局变量</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">button-style </span><span class="token punctuation">{</span> 
+  <span class="token property"><span class="token variable">$btn-bg-color</span></span><span class="token punctuation">:</span> lightblue !global<span class="token punctuation">;</span> <span class="token comment">// 不加后面使用会报错global</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$btn-bg-color</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token selector">button </span><span class="token punctuation">{</span> 
+  <span class="token keyword">@include</span> button-style<span class="token punctuation">;</span>  <span class="token comment">// 没global报错</span>
+<span class="token punctuation">}</span> 
+<span class="token selector">.wrap </span><span class="token punctuation">{</span> 
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token variable">$btn-bg-color</span><span class="token punctuation">;</span>  <span class="token comment">// 没global报错</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译出来的css</span>
+<span class="token selector">button </span><span class="token punctuation">{</span> 
+  <span class="token property">color</span><span class="token punctuation">:</span> lightblue<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token selector">.wrap </span><span class="token punctuation">{</span> 
+  <span class="token property">background</span><span class="token punctuation">:</span> lightblue<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p>检查变量是否存在
+variable-exists或者global-variable-exists</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$google-font</span></span><span class="token punctuation">:</span> <span class="token string">&quot;http://fonts.googleapis.com/css?family=Alegreya&quot;</span><span class="token punctuation">;</span> 
+
+<span class="token keyword">@if</span><span class="token punctuation">(</span><span class="token function">global-variable-exists</span><span class="token punctuation">(</span>google-font<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+  <span class="token keyword">@import</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token variable">$google-font</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="嵌套"><a href="#嵌套" aria-hidden="true" class="header-anchor">#</a> 嵌套</h2> <p>sass的嵌套包括两种：一种是选择器的嵌套；另一种是属性的嵌套。我们一般说起或用到的都是选择器的嵌套。</p> <h3 id="选择器嵌套和"><a href="#选择器嵌套和" aria-hidden="true" class="header-anchor">#</a> 选择器嵌套和&amp;</h3> <p>在选择器嵌套中，可以使用&amp;表示父元素选择器</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">#top_nav </span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+  <span class="token property">text-transform</span><span class="token punctuation">:</span> capitalize<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span>#333<span class="token punctuation">;</span>
+  <span class="token selector">li </span><span class="token punctuation">{</span>
+    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">a </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 10px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  
+    <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span>#ddd<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">#top_nav </span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+  <span class="token property">text-transform</span><span class="token punctuation">:</span> capitalize<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span>#333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#top_nav li </span><span class="token punctuation">{</span>
+  <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#top_nav a </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 10px<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#top_nav a:hover </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#ddd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="属性嵌套"><a href="#属性嵌套" aria-hidden="true" class="header-anchor">#</a> 属性嵌套</h3> <p>所谓属性嵌套指的是有些属性拥有同一个开始单词，如border-width，border-color都是以border开头。拿个官网的实例看下：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.fakeshadow </span><span class="token punctuation">{</span>
+  <span class="token selector">border: </span><span class="token punctuation">{</span>
+    <span class="token property">style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+    
+    <span class="token selector">left: </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> #888<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  
+    <span class="token selector">right: </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.fakeshadow </span><span class="token punctuation">{</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">border-left-width</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+  <span class="token property">border-left-color</span><span class="token punctuation">:</span> #888<span class="token punctuation">;</span>
+  <span class="token property">border-right-width</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+  <span class="token property">border-right-color</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="at-root"><a href="#at-root" aria-hidden="true" class="header-anchor">#</a> @at-root</h3> <p>sass3.3.0中新增的功能，用来跳出选择器嵌套的。默认所有的嵌套，继承所有上级选择器，但有了这个就可以跳出所有上级选择器。</p> <h4 id="普通跳出嵌套"><a href="#普通跳出嵌套" aria-hidden="true" class="header-anchor">#</a> 普通跳出嵌套</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token comment">//没有跳出</span>
+<span class="token selector">.parent-1 </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+  
+  <span class="token selector">.child </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>100px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//单个选择器跳出</span>
+<span class="token selector">.parent-2 </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+  
+  <span class="token atrule"><span class="token rule">@at-root</span> .child</span> <span class="token punctuation">{</span>
+  
+    <span class="token property">width</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//多个选择器跳出</span>
+<span class="token selector">.parent-3 </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+  
+  <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.child1 </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.child2 </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.parent-1 </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.parent-1 .child </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.parent-2 </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.child </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.parent-3 </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.child1 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.child2 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="at-root的without和with"><a href="#at-root的without和with" aria-hidden="true" class="header-anchor">#</a> @at-root的without和with</h4> <p>默认@at-root只会跳出选择器嵌套，而不能跳出@media或@support，如果要跳出这两种，则需使用@at-root (without: media)，@at-root (without: support)。这个语法的关键词有四个：all（表示所有），rule（表示常规css），media（表示media），support（表示support，因为@support目前还无法广泛使用，所以在此不表）。我们默认的@at-root其实就是@at-root (without:rule)。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token comment">//跳出父级元素嵌套</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent1</span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+    
+    <span class="token atrule"><span class="token rule">@at-root</span> .child1</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//跳出media嵌套，父级有效</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent2 </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+    
+    <span class="token atrule"><span class="token rule">@at-root</span> <span class="token punctuation">(</span><span class="token property">without</span><span class="token punctuation">:</span> media<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+      <span class="token selector">.child2 </span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//跳出media和父级</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent3 </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+    
+    <span class="token atrule"><span class="token rule">@at-root</span> <span class="token punctuation">(</span><span class="token property">without</span><span class="token punctuation">:</span> all<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+      <span class="token selector">.child3 </span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent1 </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.child1 </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent2 </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.parent2 .child2 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.parent3 </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.child3 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="at-root与-配合使用"><a href="#at-root与-配合使用" aria-hidden="true" class="header-anchor">#</a> @at-root与&amp;配合使用</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.child </span><span class="token punctuation">{</span>
+  @<span class="token selector">at-root .parent <span class="token parent important">&amp;</span></span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>#f00<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.parent .child </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="应用于-keyframe"><a href="#应用于-keyframe" aria-hidden="true" class="header-anchor">#</a> 应用于@keyframe</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.demo </span><span class="token punctuation">{</span>
+  ...
+  <span class="token property">animation</span><span class="token punctuation">:</span> motion 3s infinite<span class="token punctuation">;</span>
+  
+  <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@keyframes</span> motion</span> <span class="token punctuation">{</span>
+      ...
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style//-------------------------------</span>
+   <span class="token selector">.demo </span><span class="token punctuation">{</span>
+    ...
+    <span class="token property">animation</span><span class="token punctuation">:</span> motion 3s infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@keyframes</span> motion</span> <span class="token punctuation">{</span>
+  ...
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="混合-mixin"><a href="#混合-mixin" aria-hidden="true" class="header-anchor">#</a> 混合(mixin)</h2> <p>sass中使用@mixin声明混合，可以传递参数，参数名以$符号开始，多个参数以逗号分开，也可以给参数设置默认值。声明的@mixin通过@include来调用。</p> <h3 id="无参数mixin"><a href="#无参数mixin" aria-hidden="true" class="header-anchor">#</a> 无参数mixin</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token keyword">@mixin</span> <span class="token selector">center-block </span><span class="token punctuation">{</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
+  <span class="token property">margin-right</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.demo </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> center-block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.demo </span><span class="token punctuation">{</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
+  <span class="token property">margin-right</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="有参数mixin"><a href="#有参数mixin" aria-hidden="true" class="header-anchor">#</a> 有参数mixin</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token keyword">@mixin</span> <span class="token function">opacity</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$opacity</span></span><span class="token punctuation">:</span>50<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token variable">$opacity</span> <span class="token operator">/</span> 100<span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">alpha</span><span class="token punctuation">(</span>opacity=<span class="token variable">$opacity</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.opacity </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> opacity<span class="token punctuation">;</span> <span class="token comment">//参数使用默认值</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.opacity-80 </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">opacity</span><span class="token punctuation">(</span>80<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//传递参数</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="多个参数mixin"><a href="#多个参数mixin" aria-hidden="true" class="header-anchor">#</a> 多个参数mixin</h3> <p>调用时可直接传入值，如@include传入参数的个数小于@mixin定义参数的个数，则按照顺序表示，后面不足的使用默认值，如不足的没有默认值则报错。除此之外还可以选择性的传入参数，使用参数名与值同时传入。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token keyword">@mixin</span> <span class="token function">horizontal-line</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$border</span></span><span class="token punctuation">:</span>1px dashed #ccc<span class="token punctuation">,</span> <span class="token property"><span class="token variable">$padding</span></span><span class="token punctuation">:</span>10px<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">border-bottom</span><span class="token punctuation">:</span><span class="token variable">$border</span><span class="token punctuation">;</span>
+  <span class="token property">padding-top</span><span class="token punctuation">:</span><span class="token variable">$padding</span><span class="token punctuation">;</span>
+  <span class="token property">padding-bottom</span><span class="token punctuation">:</span><span class="token variable">$padding</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.imgtext-h li </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">horizontal-line</span><span class="token punctuation">(</span>1px solid #ccc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.imgtext-h--product li </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">horizontal-line</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$padding</span></span><span class="token punctuation">:</span>15px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.imgtext-h li </span><span class="token punctuation">{</span>
+  <span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px solid #cccccc<span class="token punctuation">;</span>
+  <span class="token property">padding-top</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.imgtext-h--product li </span><span class="token punctuation">{</span>
+  <span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px dashed #cccccc<span class="token punctuation">;</span>
+  <span class="token property">padding-top</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="多组值参数mixin"><a href="#多组值参数mixin" aria-hidden="true" class="header-anchor">#</a> 多组值参数mixin</h3> <p>如果一个参数可以有多组值，如box-shadow、transition等，那么参数则需要在变量后加三个点表示，如$variables...。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token comment">//box-shadow可以有多组值，所以在变量参数后面添加...</span>
+<span class="token keyword">@mixin</span> <span class="token function">box-shadow</span><span class="token punctuation">(</span><span class="token variable">$shadow</span>...<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span><span class="token variable">$shadow</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span><span class="token variable">$shadow</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span>1px solid #ccc<span class="token punctuation">;</span>
+  <span class="token keyword">@include</span> <span class="token function">box-shadow</span><span class="token punctuation">(</span>0 2px 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 3px 3px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 4px 4px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span>1px solid #ccc<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span>0 2px 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 3px 3px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 4px 4px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span>0 2px 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 3px 3px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">,</span>0 4px 4px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="content"><a href="#content" aria-hidden="true" class="header-anchor">#</a> @content</h2> <p>@content在sass3.2.0中引入，可以用来解决css3的@media等带来的问题。它可以使@mixin接受一整块样式，接受的样式从@content开始</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token keyword">@mixin</span> <span class="token function">max-screen</span><span class="token punctuation">(</span><span class="token variable">$res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token atrule"><span class="token rule">@media</span> only screen <span class="token operator">and</span> <span class="token punctuation">(</span> <span class="token property">max-width</span><span class="token punctuation">:</span> <span class="token variable">$res</span> <span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token keyword">@content</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@include</span> <span class="token function">max-screen</span><span class="token punctuation">(</span>480px<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token selector">body </span><span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> red <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token atrule"><span class="token rule">@media</span> only screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 480px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">body </span><span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> red <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>PS：@mixin通过@include调用后解析出来的样式是以拷贝形式存在的，而下面的继承则是以联合声明的方式存在的，所以从3.2.0版本以后，建议传递参数的用@mixin，而非传递参数类的使用下面的继承%。</p> <h2 id="继承"><a href="#继承" aria-hidden="true" class="header-anchor">#</a> 继承</h2> <p>sass中，选择器继承可以让选择器继承另一个选择器的所有样式，并联合声明。使用选择器的继承，要使用关键词@extend，后面紧跟需要继承的选择器。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 4px solid #ff9aa9<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.speaker </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> h1<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">h1,.speaker </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 4px solid #ff9aa9<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.speaker </span><span class="token punctuation">{</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="占位选择器"><a href="#占位选择器" aria-hidden="true" class="header-anchor">#</a> 占位选择器%</h2> <p>从sass 3.2.0以后就可以定义占位选择器%。这种选择器的优势在于：如果不调用则不会有任何多余的css文件，避免了以前在一些基础的文件中预定义了很多基础的样式，然后实际应用中不管是否使用了@extend去继承相应的样式，都会解析出来所有的样式。占位选择器以%标识定义，通过@extend调用。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector"><span class="token placeholder">%ir</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+  <span class="token property">text-shadow</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token placeholder">%clearfix</span> </span><span class="token punctuation">{</span>
+  <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$lte7</span> </span><span class="token punctuation">{</span>
+    *<span class="token property">zoom</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:before,
+  <span class="token parent important">&amp;</span>:after </span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> table<span class="token punctuation">;</span>
+    <span class="token property">font</span><span class="token punctuation">:</span> 0/0 a<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:after </span><span class="token punctuation">{</span>
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#header</span><span class="token punctuation">{</span>
+  <span class="token selector">h1</span><span class="token punctuation">{</span>
+    <span class="token keyword">@extend</span> <span class="token placeholder selector">%ir</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ir</span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> <span class="token placeholder selector">%ir</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">#header h1,.ir </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+  <span class="token property">text-shadow</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#header h1 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="函数"><a href="#函数" aria-hidden="true" class="header-anchor">#</a> 函数</h2> <p>sass定义了很多函数可供使用，当然你也可以自己定义函数，以@fuction开始。sass的官方函数链接为：sass fuction，实际项目中我们使用最多的应该是颜色函数，而颜色函数中又以lighten减淡和darken加深为最，其调用方法为lighten($color,$amount)和darken($color,$amount)，它们的第一个参数都是颜色值，第二个参数都是百分比。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$baseFontSize</span></span><span class="token punctuation">:</span> 10px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$gray</span></span><span class="token punctuation">:</span> #ccc !defualt<span class="token punctuation">;</span>
+<span class="token comment">// pixels to rems </span>
+<span class="token keyword">@function</span> <span class="token function">pxToRem</span><span class="token punctuation">(</span><span class="token variable">$px</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">@return</span> <span class="token variable">$px</span> <span class="token operator">/</span> <span class="token variable">$baseFontSize</span> <span class="token operator">*</span> 1rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token variable">$baseFontSize</span><span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span><span class="token function">lighten</span><span class="token punctuation">(</span><span class="token variable">$gray</span><span class="token punctuation">,</span>10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.test </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token function">pxToRem</span><span class="token punctuation">(</span>16px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span><span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">$gray</span><span class="token punctuation">,</span>10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span>10px<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#E6E6E6<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.test</span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span>1.6rem<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#B3B3B3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="运算"><a href="#运算" aria-hidden="true" class="header-anchor">#</a> 运算</h2> <p>sass具有运算的特性，可以对数值型的Value(如：数字、颜色、变量等)进行加减乘除四则运算。请注意运算符前后请留一个空格，不然会出错。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$baseFontSize</span></span><span class="token punctuation">:</span> 14px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$baseLineHeight</span></span><span class="token punctuation">:</span> 1.5 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$baseGap</span></span><span class="token punctuation">:</span> <span class="token variable">$baseFontSize</span> <span class="token operator">*</span> <span class="token variable">$baseLineHeight</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$halfBaseGap</span></span><span class="token punctuation">:</span> <span class="token variable">$baseGap</span> <span class="token operator">/</span> 2 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$samllFontSize</span></span><span class="token punctuation">:</span> <span class="token variable">$baseFontSize</span> <span class="token operator">-</span> 2px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+
+<span class="token comment">//grid </span>
+<span class="token property"><span class="token variable">$_columns</span></span><span class="token punctuation">:</span> 12 <span class="token statement keyword">!default</span><span class="token punctuation">;</span> <span class="token comment">// Total number of columns</span>
+<span class="token property"><span class="token variable">$_column-width</span></span><span class="token punctuation">:</span> 60px <span class="token statement keyword">!default</span><span class="token punctuation">;</span> <span class="token comment">// Width of a single column</span>
+<span class="token property"><span class="token variable">$_gutter</span></span><span class="token punctuation">:</span> 20px <span class="token statement keyword">!default</span><span class="token punctuation">;</span> <span class="token comment">// Width of the gutter</span>
+<span class="token property"><span class="token variable">$_gridsystem-width</span></span><span class="token punctuation">:</span> <span class="token variable">$_columns</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token variable">$_column-width</span> <span class="token operator">+</span> <span class="token variable">$_gutter</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//grid system width</span>
+</code></pre></div><h2 id="条件判断及循环"><a href="#条件判断及循环" aria-hidden="true" class="header-anchor">#</a> 条件判断及循环</h2> <h3 id="if判断"><a href="#if判断" aria-hidden="true" class="header-anchor">#</a> @if判断</h3> <p>@if可一个条件单独使用，也可以和@else结合多条件使用</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$lte7</span></span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$type</span></span><span class="token punctuation">:</span> monster<span class="token punctuation">;</span>
+<span class="token selector">.ib </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span>inline-block<span class="token punctuation">;</span>
+  
+  <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$lte7</span> </span><span class="token punctuation">{</span>
+    *<span class="token property">display</span><span class="token punctuation">:</span>inline<span class="token punctuation">;</span>
+    *<span class="token property">zoom</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$type</span> == ocean </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> 
+  <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == matador </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> 
+  <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == monster </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> 
+  <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.ib </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span>inline-block<span class="token punctuation">;</span>
+  *<span class="token property">display</span><span class="token punctuation">:</span>inline<span class="token punctuation">;</span>
+  *<span class="token property">zoom</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="三目判断"><a href="#三目判断" aria-hidden="true" class="header-anchor">#</a> 三目判断</h3> <p>语法为：if($condition, $if_true, $if_false) 。三个参数分别表示：条件，条件为真的值，条件为假的值。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token function">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> 1px<span class="token punctuation">,</span> 2px<span class="token punctuation">)</span> =&gt; 1px
+<span class="token function">if</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> 1px<span class="token punctuation">,</span> 2px<span class="token punctuation">)</span> =&gt; 2px
+</code></pre></div><h3 id="for循环"><a href="#for循环" aria-hidden="true" class="header-anchor">#</a> for循环</h3> <p>for循环有两种形式，分别为：@for $var from  through 和@for $var from  to 。$i表示变量，start表示起始值，end表示结束值，这两个的区别是关键字through表示包括end这个数，而to则不包括end这个数。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token keyword">@for</span> <span class="token variable">$i</span> <span class="token keyword">from</span> 1 <span class="token keyword">through</span> <span class="token selector">3 </span><span class="token punctuation">{</span>
+  <span class="token selector">.item-<span class="token variable">#{$i}</span> </span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> 2em <span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.item-1 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.item-2 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.item-3 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 6em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="each循环"><a href="#each循环" aria-hidden="true" class="header-anchor">#</a> @each循环</h3> <p>语法为：@each $var in list or map。其中$var表示变量，而list和map表示list类型数据和map类型数据。sass 3.3.0新加入了多字段循环和map数据循环。</p> <h4 id="单个字段list数据循环"><a href="#单个字段list数据循环" aria-hidden="true" class="header-anchor">#</a> 单个字段list数据循环</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$animal-list</span></span><span class="token punctuation">:</span> puma<span class="token punctuation">,</span> sea-slug<span class="token punctuation">,</span> egret<span class="token punctuation">,</span> salamander<span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$animal</span> in <span class="token variable">$animal-list</span> </span><span class="token punctuation">{</span>
+  <span class="token selector">.<span class="token variable">#{$animal}</span>-icon </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/#{$animal}.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.puma-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/puma.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.sea-slug-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/sea-slug.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.egret-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/egret.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.salamander-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/salamander.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="多个字段list数据循环"><a href="#多个字段list数据循环" aria-hidden="true" class="header-anchor">#</a> 多个字段list数据循环</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$animal-data</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>puma<span class="token punctuation">,</span> black<span class="token punctuation">,</span> default<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>sea-slug<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> pointer<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>egret<span class="token punctuation">,</span> white<span class="token punctuation">,</span> move<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$animal</span>, <span class="token variable">$color</span>, <span class="token variable">$cursor</span> in <span class="token variable">$animal-data</span> </span><span class="token punctuation">{</span>
+  <span class="token selector">.<span class="token variable">#{$animal}</span>-icon </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/#{$animal}.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 2px solid <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token variable">$cursor</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">.puma-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/puma.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid black<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> default<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.sea-slug-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/sea-slug.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid blue<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.egret-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/egret.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid white<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> move<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="多个字段map数据循环"><a href="#多个字段map数据循环" aria-hidden="true" class="header-anchor">#</a> 多个字段map数据循环</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//sass style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token property"><span class="token variable">$headings</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token property">h1</span><span class="token punctuation">:</span> 2em<span class="token punctuation">,</span> <span class="token property">h2</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">,</span> <span class="token property">h3</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$header</span>, <span class="token variable">$size</span> in <span class="token variable">$headings</span> </span><span class="token punctuation">{</span>
+  <span class="token selector"><span class="token variable">#{$header}</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//css style</span>
+<span class="token comment">//-------------------------------</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h2 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h3 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/前端开发/基础/css-css基础.html" class="prev">
+          css--css 基础
+        </a></span> <span class="next"><a href="/前端开发/基础/node-node基础.html">
+          node--node 基础
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.20b7a3cd.js" defer></script><script src="/assets/js/2.94e36c74.js" defer></script><script src="/assets/js/18.03c2d240.js" defer></script>
+  </body>
+</html>
